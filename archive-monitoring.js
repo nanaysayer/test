@@ -2,7 +2,7 @@ import spawn from 'child_process';
 import {sendWarningMail} from '../utils.js'
 import {logger} from '../log.js';
 
-const LAST_MINUTES = 120
+const LAST_MINUTES = 121
 const TOLERANCE_IN_SEC = 65;
 
 const getFiles = path => {
