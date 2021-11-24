@@ -46,6 +46,7 @@ const findBigArchives = (timeData, cutoff) => {
     let maxCutoffInSec = ((cutoff * 60) + TOLERANCE_IN_SEC)
     let filesGreaterThanExpected = []
     for (let time of timeData) {
+
         let archDurationInSec = getArchDurationInSec(time.started, time.ended)
         if (maxCutoffInSec < archDurationInSec) {
             filesGreaterThanExpected.push(time)
