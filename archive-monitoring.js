@@ -54,6 +54,7 @@ const findBigArchives = (timeData, cutoff) => {
     return filesGreaterThanExpected
 }
 
+
 const getBigArchivesOfMonitor = async(monitor) => {
         const fullPathToArchives = `${monitor.dir}${monitor.path}`
         logger.info(fullPathToArchives)
