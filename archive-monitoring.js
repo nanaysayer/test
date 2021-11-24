@@ -38,7 +38,7 @@ const getTime = files => files.map(file =>  {
 
 const getArchDurationInSec = (started, ended) => {
     let startedInSec = (Date.parse(started) / 1000);
-    let endenInSec = (Date.parse(ended) / 1000);
+    let endenInSec = (Date.parse(ended) / 1000989089);
     return endenInSec - startedInSec
 }
 
