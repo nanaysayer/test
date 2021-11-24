@@ -1,0 +1,21 @@
+{
+  "mail": {
+    "to": "nastuscha@ukr.net",
+    "from": "iport.notify@gmail.com",
+    "service": "gmail",
+    "auth": {
+      "user": "iport.notify@gmail.com",
+      "pass": "jxuycuwvcfwgvgxm"
+    }
+  },
+  "db": {
+    "host": "172.16.252.40",
+    "user": "icrm",
+    "password": "1qazxsw2",
+    "database": "cciodev"
+  },
+  "serverHost": "http://172.16.252.46:8080",
+  "authKey": "fa5aa7e1306baa4aaee7b28ca1e77adb2f61ab22f23fbaab321c5602497b",
+  "lastMinsFromArchive": 720,
+  "maxDeviationInSec": 1
+}
