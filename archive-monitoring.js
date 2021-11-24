@@ -2,7 +2,7 @@ import spawn from 'child_process';
 import {sendWarningMail} from '../utils.js'
 import {logger} from '../log.js';
 
-const LAST_MINUTES = 121
+const LAST_MINUTES = 128
 const TOLERANCE_IN_SEC = 65;
 
 const getFiles = path => {
@@ -25,6 +25,7 @@ const getFiles = path => {
 }
 
 const getTime = files => files.map(file =>  {
+
     let splittedInfo = file.split('+ ');
     let startedTime = splittedInfo[1].split('T');
     let formattedStartTime = startedTime[1].replace(/-/g, ':').replace('.mp4', '');
@@ -42,7 +43,6 @@ const getArchDurationInSec = (started, ended) => {
 }
 
 const findBigArchives = (timeData, cutoff) => {
-
     let maxCutoffInSec = ((cutoff * 60) + TOLERANCE_IN_SEC)
     let filesGreaterThanExpected = []
     for (let time of timeData) {
